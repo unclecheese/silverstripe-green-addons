@@ -1,0 +1,21 @@
+{
+	"name": "unclecheese/silverstripe-green-addons",
+	"description": "Addons for the silverstripe-green module that provide template parsing and code generation",
+	"type": "silverstripe-module",
+	"homepage": "https://github.com/unclecheese/silverstripe-green-addons",
+	"keywords": ["silverstripe", "design", "yaml", "json", "green"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{"name": "Uncle Cheese","email": "unclecheese@leftandmain.com"}
+	],
+	"support": {
+		"issues": "https://github.com/unclecheese/silverstripe-green-addons/issues"
+	},
+	"require": {
+		"unclecheese/silverstripe-green": "*",		
+		"symfony/filesystem": "^3.1",
+		"unclecheese/reflection-templates": "dev-master",
+		"unclecheese/mock-dataobjects": "^1.0"
+	}
+}
+

@@ -1,0 +1,14 @@
+---
+Name: green-addons
+After:
+  - '#green'
+---
+Injector:
+  GreenTemplateParserService:
+    class: ReflectionTemplate
+  UncleCheese\Green\TemplateParser:
+    constructor:
+      0: %$GreenTemplateParserService
+LeftAndMain:
+  extra_requirements_javascript:
+    - silverstripe-green-addons/javascript/green-cms-addons.js
