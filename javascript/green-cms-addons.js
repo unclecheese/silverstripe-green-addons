@@ -2,7 +2,11 @@
 	$.entwine('ss', function($) {
 		$('[name=TemplateData]').entwine({
 			onmatch: function() {
-				
+				var label = this.closest('.field').find('label');
+				var id = this.closest('form').find('[name=ID]').val();
+				var klass = this.closest('form').find('[name=ClassName]').val();
+				var button = '<a class="template-parse-button" href="/admin/green?id='+id+'&class='+klass+'">Load from template</a>';
+				label.html(label.html() + '('+button+')');
 			}
 		});
 		$('a.template-parse-button').entwine({
